@@ -1,0 +1,36 @@
+body {
+    height:100vh;
+    display: grid;
+    grid-template-rows: 40px 60px 100vh 40px;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "aside main main"
+      "footer footer footer";
+  }
+  
+  .cabecalho{
+    background-color: aqua;
+    grid-area: header;
+  }
+  
+  .navegacao{
+    background-color: blueviolet;
+    grid-area: nav;
+  }
+
+  .Menu {
+    background: rgb(114, 114, 114);
+    grid-area: aside;
+  }
+  
+  .principal{
+    background-color: blue;
+    grid-area: main;
+  }
+  
+  .rodape {
+    background-color: brown;
+    grid-area: footer;
+    
+  }
